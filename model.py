@@ -7,7 +7,6 @@ from sklearn.pipeline import make_pipeline
 
 data = pd.read_csv("winequality-red.csv", sep=';')
 
-# Select only 5 features
 selected_features = ['fixed acidity', 'volatile acidity', 'citric acid', 'alcohol', 'pH']
 X = data[selected_features]
 y = data['quality']
