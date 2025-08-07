@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wine Quality Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="card result-card">
+      <h1>🍷 Wine Quality Prediction</h1>
+      <p class="result-text">Predicted Wine Quality Score: <span class="result-value">{{ prediction }}</span></p>
+      <a href="/" class="btn">🔁 Try Another</a>
+    </div>
+  </div>
+</body>
+</html>
